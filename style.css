@@ -69,14 +69,14 @@ body {
     width: 0;
     height: 3px;
     background: linear-gradient(90deg, #8b5cf6, #ec4899);
-    transition: width 0.3s ease;
+    transition: width 0.3s ease-in-out;
     border-radius: 2px;
 }
 
 .topnav a:hover {
     background: rgba(139, 92, 246, 0.15);
-    color: #a78bfa;
-    transform: translateY(-2px);
+    color: #fa8b8b;
+    transform: translateY(-3px);
 }
 
 .topnav a:hover::before {
