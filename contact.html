@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hubungi Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for contact form */
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: #667eea;
+            color: white;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #764ba2;
+        }
+
+        .contact-info {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #667eea;
+        }
+
+        .contact-info h4 {
+            margin: 0 0 5px 0;
+            color: #667eea;
+        }
+
+        .contact-info p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Contact Me</h1>
+        <p>Mari terhubung dan berkolaborasi</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="row">
+        <!-- Left Column / Main Content -->
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Hubungi Saya</h2>
+                <p>Apakah Anda memiliki proyek yang menarik? Atau hanya ingin say hello? Silakan isi form di bawah ini, saya akan merespon secepat mungkin!</p>
+
+                <form class="contact-form" action="#" method="post">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+                    <label for="subjek">Subjek</label>
+                    <input type="text" id="subjek" name="subjek" placeholder="Topik pesan Anda..." required>
+
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Lokasi</h2>
+                <div class="fakeimg" style="height:300px;">
+                    <p style="padding-top: 130px; color: white;">Google Maps Embed<br>(Lokasi Kampus/Kota)</p>
+                </div>
+                <p style="margin-top: 15px;"><strong>Alamat:</strong> [Kota/Provinsi Anda]</p>
+            </div>
+        </div>
+
+        <!-- Right Column / Sidebar -->
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Informasi Kontak</h2>
+
+                <div class="contact-info">
+                    <h4>📧 Email</h4>
+                    <p>example@email.com</p>
+                </div>
+
+                <div class="contact-info">
+                    <h4>📱 Telephone</h4>
+                    <p>+62 xxx xxxx xxxx</p>
+                </div>
+
+                <div class="contact-info">
+                    <h4>📍 Lokasi</h4>
+                    <p>[Nama Kota], Indonesia</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Social Media</h3>
+                <p>Ikuti saya di:</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-btn">📷 Instagram</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-btn">💼 LinkedIn</a>
+                    <a href="https://github.com" target="_blank" class="social-btn">💻 GitHub</a>
+                    <a href="https://behance.net" target="_blank" class="social-btn">🎨 Behance</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Jam Kerja</h3>
+                <p><strong>Senin - Jumat:</strong><br>09:00 - 17:00</p>
+                <p><strong>Sabtu - Minggu:</strong><br>Libur</p>
+                <p style="margin-top: 10px; font-size: 12px; color: #666;">*Waktu respon email: 1-2 hari kerja</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Footer</h2>
+        <p>&copy; 2026 Portfolio Pribadi | Dibuat untuk Tugas DKV</p>
+    </div>
+</body>
+</html>
